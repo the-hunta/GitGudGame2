@@ -14,8 +14,8 @@
 		C8C4C85D24B641B400014829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C4C85B24B641B400014829 /* Main.storyboard */; };
 		C8C4C85F24B641B500014829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C4C85E24B641B500014829 /* Assets.xcassets */; };
 		C8C4C86224B641B500014829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8C4C86024B641B500014829 /* LaunchScreen.storyboard */; };
-		DE2659FD24B66C4C00810DE5 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2659FC24B66C4C00810DE5 /* QuestionViewController.swift */; };
-		DE2659FF24B66C6000810DE5 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2659FE24B66C6000810DE5 /* GameDetailViewController.swift */; };
+		DE265A0124B689A700810DE5 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE265A0024B689A700810DE5 /* GameDetailViewController.swift */; };
+		DE265A0324B689B700810DE5 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE265A0224B689B700810DE5 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		C8C4C85E24B641B500014829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8C4C86124B641B500014829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8C4C86324B641B500014829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE2659FC24B66C4C00810DE5 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = ../../../../../../../Documents/QuestionViewController.swift; sourceTree = "<group>"; };
-		DE2659FE24B66C6000810DE5 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameDetailViewController.swift; path = ../../../../../../../Documents/GameDetailViewController.swift; sourceTree = "<group>"; };
+		DE265A0024B689A700810DE5 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameDetailViewController.swift; path = GitGudGame/Controllers/GameDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		DE265A0224B689B700810DE5 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = GitGudGame/Controllers/QuestionViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 		C850516724B6613900D42EBE /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DE2659FC24B66C4C00810DE5 /* QuestionViewController.swift */,
-				DE2659FE24B66C6000810DE5 /* GameDetailViewController.swift */,
+				DE265A0024B689A700810DE5 /* GameDetailViewController.swift */,
+				DE265A0224B689B700810DE5 /* QuestionViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -196,8 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8C4C85624B641B400014829 /* AppDelegate.swift in Sources */,
-				DE2659FF24B66C6000810DE5 /* GameDetailViewController.swift in Sources */,
-				DE2659FD24B66C4C00810DE5 /* QuestionViewController.swift in Sources */,
+				DE265A0124B689A700810DE5 /* GameDetailViewController.swift in Sources */,
+				DE265A0324B689B700810DE5 /* QuestionViewController.swift in Sources */,
 				C850516524B6611700D42EBE /* TriviaModel.swift in Sources */,
 				C850516924B6615700D42EBE /* TriviaModelController.swift in Sources */,
 				C8C4C85824B641B400014829 /* SceneDelegate.swift in Sources */,
