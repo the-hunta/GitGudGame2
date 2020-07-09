@@ -17,18 +17,18 @@ class QuestionControllers {
     var questionIndexNumber = 0
 
 
-    //Tempory question resource https://www.cosmopolitan.com/uk/worklife/a32612392/best-true-false-quiz-questions/
-    let question = ["Prince Harry is taller than Prince William","The star sign Aquarius is represented by a tige","Meryl Streep has won two Academy Awards","Marrakesh is the capital of Morocco","Idina Menzel sings 'let it go' 20 times in 'Let It Go' from Frozen"]
-
-    //Answer Array: we could compare answer[0] with what user tapped
-    let answer = ["False","True","False","False","False"]
+    var questions: [Question] = [
+        Question(question: "What is 1+1?", answer: ["1", "2", "3", "4"], correctAnswer: 0),
+        Question(question: "Have you subscrbed to Seemu Apps", answer: ["Yes", "No", "I will", "No Thanks"], correctAnswer: 0),
+        Question(question: "What is the Capital of Australia?", answer: ["Sydney", "Melbourne", "Adelaide", "Canberra"], correctAnswer: 3)
+    ]
 
 
 
     //initially show first question which is question[0]
     //should be called when user click true or false button
-    func fetchQuestion() -> String {
-        return question[questionIndexNumber]
+    func fetchQuestion() -> Question {
+        return questions[questionIndexNumber]
     }
 
 
