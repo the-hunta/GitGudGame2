@@ -9,10 +9,10 @@
 import Foundation
 class Question {
     let question: String
-    let answer: String
+    let answer: [String]
     let correctAnswer: Int
 
-    init(question: String, answer: String, correctAnswer: Int) {
+    init(question: String, answer: [String], correctAnswer: Int) {
         self.question = question
         self.answer = answer
         self.correctAnswer = correctAnswer
