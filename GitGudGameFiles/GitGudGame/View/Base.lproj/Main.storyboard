@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitGudGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="GitGudGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,26 +24,38 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="phx-HD-fRb">
-                                <rect key="frame" x="150" y="368" width="114" height="172.5"/>
+                                <rect key="frame" x="150" y="368" width="46" height="172.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6v-wA-uK1">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonOneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaC-ZZ-fvI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-cs-5yG">
-                                        <rect key="frame" x="0.0" y="38" width="114" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNh-hp-RTn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-4f-rvl">
-                                        <rect key="frame" x="0.0" y="76" width="114" height="30"/>
+                                        <rect key="frame" x="0.0" y="76" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonThreeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Otc-Mg-kZO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cos-KZ-aYB">
-                                        <rect key="frame" x="0.0" y="114" width="114" height="30"/>
+                                        <rect key="frame" x="0.0" y="114" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonFourTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Teq-A2-otz"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X / X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-2k-d2s">
-                                        <rect key="frame" x="0.0" y="152" width="114" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="152" width="46" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -62,6 +74,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonFour" destination="cos-KZ-aYB" id="Jg7-tc-jH8"/>
+                        <outlet property="buttonOne" destination="j6v-wA-uK1" id="cjD-fj-7Sw"/>
+                        <outlet property="buttonThree" destination="U2l-4f-rvl" id="uw1-WP-cYM"/>
+                        <outlet property="buttonTwo" destination="AQm-cs-5yG" id="43G-yz-UI9"/>
+                        <outlet property="correctAnswerLabel" destination="oQt-2k-d2s" id="EhO-oD-aPd"/>
+                        <outlet property="questionTextField" destination="iUI-Vx-Iqu" id="IYZ-hr-Kim"/>
                         <segue destination="XAI-pu-nH6" kind="show" id="MJ1-Os-wxR"/>
                     </connections>
                 </viewController>
