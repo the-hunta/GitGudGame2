@@ -15,61 +15,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iUI-Vx-Iqu">
-                                <rect key="frame" x="32" y="107" width="351" height="177"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="phx-HD-fRb">
-                                <rect key="frame" x="150" y="368" width="46" height="172.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yPT-jE-ixX">
+                                <rect key="frame" x="65" y="190" width="284" height="477"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6v-wA-uK1">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonOneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaC-ZZ-fvI"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-cs-5yG">
-                                        <rect key="frame" x="0.0" y="38" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNh-hp-RTn"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-4f-rvl">
-                                        <rect key="frame" x="0.0" y="76" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonThreeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Otc-Mg-kZO"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cos-KZ-aYB">
-                                        <rect key="frame" x="0.0" y="114" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonFourTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Teq-A2-otz"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X / X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-2k-d2s">
-                                        <rect key="frame" x="0.0" y="152" width="46" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-pN-kQr">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Sti-dR-3hi"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="phx-HD-fRb">
+                                        <rect key="frame" x="0.0" y="220" width="284" height="257"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6v-wA-uK1">
+                                                <rect key="frame" x="0.0" y="0.0" width="284" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonOneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaC-ZZ-fvI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-cs-5yG">
+                                                <rect key="frame" x="0.0" y="53" width="284" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNh-hp-RTn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2l-4f-rvl">
+                                                <rect key="frame" x="0.0" y="106" width="284" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonThreeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Otc-Mg-kZO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cos-KZ-aYB">
+                                                <rect key="frame" x="0.0" y="159" width="284" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonFourTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Teq-A2-otz"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X / X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQt-2k-d2s">
+                                                <rect key="frame" x="0.0" y="212" width="284" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Gn-pN-kQr" firstAttribute="leading" secondItem="yPT-jE-ixX" secondAttribute="leading" id="1jM-07-LQS"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="phx-HD-fRb" secondAttribute="trailing" constant="150" id="Chz-gL-8oK"/>
-                            <constraint firstItem="phx-HD-fRb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="QZ3-wD-xv4"/>
-                            <constraint firstItem="phx-HD-fRb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lyq-Sv-feT"/>
-                            <constraint firstItem="phx-HD-fRb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.111111" id="sM7-5u-liE"/>
-                            <constraint firstItem="phx-HD-fRb" firstAttribute="top" secondItem="iUI-Vx-Iqu" secondAttribute="bottom" constant="100" id="zFf-Rf-gdJ"/>
+                            <constraint firstItem="yPT-jE-ixX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="146" id="1lp-PE-yn3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPT-jE-ixX" secondAttribute="trailing" constant="65" id="RkO-Dn-wAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yPT-jE-ixX" secondAttribute="bottom" constant="195" id="SGE-lC-6VW"/>
+                            <constraint firstItem="yPT-jE-ixX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="t7t-9E-6wn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -79,7 +87,7 @@
                         <outlet property="buttonThree" destination="U2l-4f-rvl" id="uw1-WP-cYM"/>
                         <outlet property="buttonTwo" destination="AQm-cs-5yG" id="43G-yz-UI9"/>
                         <outlet property="correctAnswerLabel" destination="oQt-2k-d2s" id="EhO-oD-aPd"/>
-                        <outlet property="questionTextField" destination="iUI-Vx-Iqu" id="IYZ-hr-Kim"/>
+                        <outlet property="questionLabel" destination="0Gn-pN-kQr" id="K5t-4Y-oFr"/>
                         <segue destination="XAI-pu-nH6" kind="show" id="MJ1-Os-wxR"/>
                     </connections>
                 </viewController>

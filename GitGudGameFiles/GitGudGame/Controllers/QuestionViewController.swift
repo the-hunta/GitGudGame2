@@ -10,7 +10,8 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     
-    @IBOutlet weak var questionTextField: UITextView!
+    
+    @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
     @IBOutlet weak var buttonThree: UIButton!
@@ -38,7 +39,7 @@ class QuestionViewController: UIViewController {
     // MARK: - Methods
     func questionViews() {
         let currentQuestion = QuestionControllers.shared.questions[0].question
-        questionTextField.text = currentQuestion
+        questionLabel.text = currentQuestion
         let answer1 = QuestionControllers.shared.questions[0].answer[0]
         let answer2 = QuestionControllers.shared.questions[0].answer[1]
         let answer3 = QuestionControllers.shared.questions[0].answer[2]
