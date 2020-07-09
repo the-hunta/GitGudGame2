@@ -17,11 +17,8 @@ class QuestionControllers {
     var questionIndexNumber = 0
 
 
-    //Tempory question resource https://www.cosmopolitan.com/uk/worklife/a32612392/best-true-false-quiz-questions/
-    let question = ["Prince Harry is taller than Prince William","The star sign Aquarius is represented by a tige","Meryl Streep has won two Academy Awards","Marrakesh is the capital of Morocco","Idina Menzel sings 'let it go' 20 times in 'Let It Go' from Frozen"]
-
-    //Answer Array: we could compare answer[0] with what user tapped
-    let answer = ["False","True","False","False","False"]
+    var questions: [Question] = {
+    }
 
 
 
