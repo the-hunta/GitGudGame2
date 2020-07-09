@@ -17,15 +17,18 @@ class QuestionControllers {
     var questionIndexNumber = 0
 
 
-    var questions: [Question] = {
-    }
+    var questions: [Question] = [
+        Question(question: "What is 1+1?", answer: ["1", "2", "3", "4"], correctAnswer: 0),
+        Question(question: "Have you subscrbed to Seemu Apps", answer: ["Yes", "No", "I will", "No Thanks"], correctAnswer: 0),
+        Question(question: "What is the Capital of Australia?", answer: ["Sydney", "Melbourne", "Adelaide", "Canberra"], correctAnswer: 3)
+    ]
 
 
 
     //initially show first question which is question[0]
     //should be called when user click true or false button
-    func fetchQuestion() -> String {
-        return question[questionIndexNumber]
+    func fetchQuestion() -> Question {
+        return questions[questionIndexNumber]
     }
 
 
